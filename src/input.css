@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.calc{
+    @apply rounded-2xl w-wid h-hei ;
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.25);
+}
+.btn{
+    width: 54px;
+    height: 52px;
+    padding: 6px 4px;
+    text-align: center;
+    font-size: 26px;
+    border-radius: 16px;
+}
+.wBtn{
+@apply bg-gradient-to-l from-btnBlue to-btnBlu ;
+}
+.BBtn{
+background-color: #303136;
+}

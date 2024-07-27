@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="min-h-full">
+    <nav class="bg-gray-800 h-10vh">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <!-- left side -->
+          <div class="flex items-center">
+            <!-- logo -->
+            <div class="flex-shrink-0 ">
+              <img class="h-8 w-36 " style="filter: drop-shadow(0px 0px 2px white );" src="./photos/logo.png" alt="logo">
+            </div>
+            </div>
+            
+          <!-- right side  profile-->
+        <div class="border-t border-gray-700 pb-3 pt-4">
+          <div class="flex items-center px-5">
+            <div class="flex-shrink-0">
+              <img class="h-10 w-10 rounded-full" src="./photos/download.jpg" alt="">
+            </div>
+            <div class="ml-3">
+              <div class="text-base font-medium leading-none text-white">Hima Sallem</div>
+              <div class="text-sm font-medium leading-none text-gray-400">hemawith4@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mx-auto py-6 sm:px-6 lg:px-8 bg-gradient-to-r from-sky-400 to-sky-200 h-90vh flex flex-row justify-around ">
+      
+      <!-- left calculator -->
+      <div class=" bg-glass calc  "  >
+
+      <h1 class="text-center text-3xl text-white "> calculator</h1>
+      <div  class="flex flex-col gap-y-2 px-5" style="text-align: center;">
+        <input disabled type="text" class="text-2xl bg-inherit text-white px-5" id="lHolder1"></input>
+        <input disabled id="lOperator" class="text-2xl bg-inherit text-white px-5"></input>
+        <input disabled type="text" id="lHolder2" class="text-2xl bg-inherit text-white px-5"></input>
+      </div>
+        <br>
+        <div class="grid grid-cols-4 grid-rows-5 grid-flow-col  gap-y-4 gap-x-3 p-1">
+          <button  class="btn BBtn text-numBlue " id="LAc">AC</button>
+          <button  class="btn BBtn text-numBlue " id="Lnum7">7</button>
+          <button  class="btn BBtn text-numBlue " id="Lnum4">4</button>
+          <button  class="btn BBtn text-numBlue " id="Lnum1">1</button>
+          <button  class="btn BBtn text-numBlue " id="Lnum00">00</button>
+          <button  class="btn BBtn text-numBlue " id="LC">C</button>
+          <button  class="btn BBtn text-numBlue " id="Lnum8">8</button>
+          <button  class="btn BBtn text-numBlue " id="Lnum5">5</button>
+          <button  class="btn BBtn text-numBlue " id="Lnum2">2</button>
+          <button  class="btn BBtn text-numBlue " id="Lnum0">0</button>
+          <button  class="btn bg-btnBlack text-numBlue " id="L/">/</button>
+          <button  class="btn BBtn text-numBlue " id="Lnum9">9</button>
+          <button  class="btn BBtn text-numBlue " id="Lnum6">6</button>
+          <button  class="btn BBtn text-numBlue " id="Lnum3">3</button>
+          <button  class="btn BBtn text-numBlue  " id="L.">.</button>
+          <button  class="btn bg-btnBlack text-numBlue " id="L*">*</button>
+          <button  class="btn bg-btnBlack text-numBlue " id="L-">-</button>
+          <button  class="btn bg-btnBlack text-numBlue " id="L+">+</button>
+          <button  class="btn row-span-2 bg-btnBlack " id="L=" style="height: 120px;">=</button>
+        </div>
+      </div>
+      <!-- middle calculator -->
+      <div class=" calc bg-glassM  sm:block hidden" >
+          
+      <h1 class="text-center text-3xl"> calculator</h1>
+      <div  class="flex flex-col gap-y-2 px-5" style="text-align: center;">
+        <input disabled id="mHolder1" type="text" class="text-2xl bg-inherit px-5"></input>
+        <input disabled id="mOperator" class="text-2xl bg-inherit px-5"></input>
+        <input disabled id="mHolder2" type="text" class="text-2xl px-5 bg-inherit "></input>
+      </div>
+        <br>
+        <div class="grid grid-cols-4 grid-rows-5 grid-flow-col  gap-y-4 gap-x-3 p-1">
+          <button  class="btn wBtn text-gray-100 " id="MAc">AC</button>
+          <button  class="btn wBtn text-gray-100 " id="Mnum7">7</button>
+          <button  class="btn wBtn text-gray-100 " id="Mnum4">4</button>
+          <button  class="btn wBtn text-gray-100 " id="Mnum1">1</button>
+          <button  class="btn wBtn text-gray-100 " id="Mnum00">00</button>
+          <button  class="btn wBtn text-gray-100 " id="MC">C</button>
+          <button  class="btn wBtn text-gray-100 " id="Mnum8">8</button>
+          <button  class="btn wBtn text-gray-100 " id="Mnum5">5</button>
+          <button  class="btn wBtn text-gray-100 " id="Mnum2">2</button>
+          <button  class="btn wBtn text-gray-100 " id="Mnum0">0</button>
+          <button  class="btn bg-blue-500 text-gray-100 " id="M/">/</button>
+          <button  class="btn wBtn text-gray-100 " id="Mnum9">9</button>
+          <button  class="btn wBtn text-gray-100 " id="Mnum6">6</button>
+          <button  class="btn wBtn text-gray-100 " id="Mnum3">3</button>
+          <button  class="btn wBtn text-gray-100  " id="M.">.</button>
+          <button  class="btn bg-blue-500 text-gray-100 " id="M*">*</button>
+          <button  class="btn bg-blue-500 text-gray-100 " id="M-">-</button>
+          <button  class="btn bg-blue-500 text-gray-100 " id="M+">+</button>
+          <button  class="btn bg-blue-500 row-span-2" id="M=" style="height: 120px;">=</button>
+        </div>
+      </div>
+      <!-- right calculator -->
+      <div class=" calc bg-glassB md:block hidden" >
+          
+      <h1 class="text-center text-3xl"> calculator</h1>
+      <div class="flex flex-col gap-y-2 px-5" style="text-align: center;">
+        <input disabled id="rHolder1"  type="text" class="text-2xl bg-inherit px-5" />
+
+        <input disabled  id="rOperator"  class="text-2xl bg-inherit px-5"></input>
+        <input disabled  id="rHolder2" type="text" class="text-2xl px-5 bg-inherit "></input>
+      </div>
+        <br>
+        <div class="grid grid-cols-4 grid-rows-5 grid-flow-col  gap-y-4 gap-x-3 p-1">
+          <button  class="btn wBtn text-gray-100 " id="RAc">AC</button>
+          <button  class="btn wBtn text-gray-100 " id="Rnum7">7</button>
+          <button  class="btn wBtn text-gray-100 " id="Rnum4">4</button>
+          <button  class="btn wBtn text-gray-100 " id="Rnum1">1</button>
+          <button  class="btn wBtn text-gray-100 " id="Rnum00">00</button>
+          <button  class="btn wBtn text-gray-100 " id="RC">C</button>
+          <button  class="btn wBtn text-gray-100 " id="Rnum8">8</button>
+          <button  class="btn wBtn text-gray-100 " id="Rnum5">5</button>
+          <button  class="btn wBtn text-gray-100 " id="Rnum2">2</button>
+          <button  class="btn wBtn text-gray-100 " id="Rnum0">0</button>
+          <button  class="btn bg-btnMiddle text-gray-100 " id="R/">/</button>
+          <button  class="btn wBtn text-gray-100 " id="Rnum9">9</button>
+          <button  class="btn wBtn text-gray-100 " id="Rnum6">6</button>
+          <button  class="btn wBtn text-gray-100 " id="Rnum3">3</button>
+          <button  class="btn wBtn text-gray-100  " id="R.">.</button>
+          <button  class="btn bg-btnMiddle text-gray-100 " id="R*">*</button>
+          <button  class="btn bg-btnMiddle text-gray-100 " id="R-">-</button>
+          <button  class="btn bg-btnMiddle  text-gray-100 " id="R+">+</button>
+          <button  class="btn bg-btnMiddle row-span-2" id="R="style="height: 120px;">=</button>
+        </div>
+      </div>
+      </main>
+  </div>
+  <script src="./src/script.js"></script>
+  <script src="./src/right.js"></script>
+  <script src="./src/middle.js"></script>
+</body>
+</html>
